@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style media="screen">
+			#name{
+				width: 10em;
+				border: solid 1px #333;
+			}
+		</style>
+		<script type="application/javascript">
+			window.addEventListener("DOMContentLoaded", function(){
+				var input = document.getElementById("name");
+				var snippet = {
+					"w" : "ホワイトデー",
+					"v15" : "バレンタイン",
+					"k" : "古代兵器" ,
+				};
+				input.addEventListener("keyup", function(){
+					if ( input.value in snippet ) {
+						input.value = snippet[input.value];
+					}
+				})
+			}, false)
+		</script>
+	</head>
+	<body>
+		<input type="text" name="name" id="name" value="">
+	</body>
+</html>

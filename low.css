@@ -1,0 +1,180 @@
+@charset "utf-8"
+
+body {
+	width: 95%;
+	margin: 0 auto;
+	font-size: 80%;
+}
+
+ul, li, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+header, footer {
+	background: #404040;
+	color: #fff;
+}
+
+navi ul {
+	display: table;
+	width: 90%;
+	margin: 0 auto;
+}
+navi li {
+	display: table-cell;
+	border: 1px solid #333333;
+	text-align: center;
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#field {
+	height: 440px;
+	position: relative;
+}
+
+#field .result {
+	width: 360px;
+	height: 400px;
+	border: 1px solid #333;
+	padding: 10px;
+	overflow: auto;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+}
+
+#information {
+/**	display: none; **/
+	width: 100%;
+}
+#information > div  {
+/**
+	display: flex;
+	margin: 1px 10px;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+**/
+	margin: 20px 0;
+}
+#information > div .name {
+	width: 100px;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+#information > div .walkure {
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+}
+#information > div .walkure .card{
+	display: table-cell;
+	width: 12em;
+	color: #fff;
+	margin: 2px 2em;
+}
+
+#information > div .equipment {
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+}
+#information > div .equipment li {
+	display: table-cell;
+	width: 12em;
+	margin: 2px 2em;
+}
+
+#information > div .status {
+	display: table;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 14px;
+}
+#information .status dt {
+	display: table-cell;
+}
+#information .status dt::after {
+	content: " : ";
+}
+#information .status dd {
+	display: table-cell;
+	width: 50px;
+	text-align: right;
+	padding-right: 10px;
+
+}
+
+
+#field .result.player1 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#field .result.player2 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#field .result.summary {
+	position: absolute;
+	top: 40px;
+	left: 420px;
+	width: 220px;
+	height: 340px;
+	background-color: #fff;
+	color: #000;
+}
+
+#field .result.summary ul:after {
+	content: " ";
+	display: none;
+	clear: both;
+}
+#field .result.summary li {
+	width: 20px;
+	height: 20px;
+	margin: 1px;
+	text-align: center;
+	float: left;
+}
+#field .result.summary li:hover {
+	cursor: pointer;
+	background-color: #c3ecb3;
+}
+
+#field .result.summary #total {
+	height: 24px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#panel {
+	display: table;
+	width: 200px;
+	height: 40px;
+	background-color: #484;
+	margin: 20px;
+}
+#panel  .button {
+	display: table-cell;
+	width: 80px;
+	height: 30px;
+	border: solid 1px #fff;
+	background-color: #8a8;
+	text-align: center;
+	vertical-align: middle;
+}
+#panel  .button:hover {
+	cursor: pointer;
+	background-color: #d8773a;
+}
